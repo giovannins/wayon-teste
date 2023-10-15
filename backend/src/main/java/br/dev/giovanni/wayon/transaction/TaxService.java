@@ -42,6 +42,6 @@ public class TaxService {
 																		// dias.
 		}
 
-		return new BigDecimal("3.00"); // Taxa fixa de R$ 3.00 para transferências com 0 dias de antecedência.
+		throw new TaxException();
 	}
 }
